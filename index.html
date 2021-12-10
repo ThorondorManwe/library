@@ -12,6 +12,45 @@
         <header>
             <h1>Books by Chuck</h1>
         </header>
+
+        <div class="main">
+
+            <!-- Formulario Books -->
+            <div class="contenedor">
+                <form action="" class="formulario" id="formulario" name="formulario">
+                    <div class="contenedor-inputs">
+                        <input type="text" name="title" placeholder="Title" required>
+                        <input type="text" name="author" placeholder="Author">
+                        <input type="number" name="pages" placeholder="Number of pages" required>
+
+                        <div class="read">
+                            <input type="radio" name="read" id="readIt" value="read it">
+                            <label class="label-radio read-it" for="readIt">Read it</label>
+                            <input type="radio" name="read" id="notReadIt" value="not read yet">
+                            <label class="label-radio not-read-it" for="notReadIt">Not read yet</label>
+                        </div>
+
+                        <ul class="error" id="error">
+                           
+                        </ul>
+                    </div>
+
+                    <input type="submit" class="btn" value="+Add Book">
+
+                </form>
+            </div>
+            
+            <div class="show-book">
+                <h2>Insert the book data</h2>
+                <p></p>
+                <ul class="book-data">
+                    <li>Loading Data...</li>
+                </ul>
+            </div>
+
+        </div>
+
+
     </body>
 
 </html>

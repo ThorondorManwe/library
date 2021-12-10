@@ -21,3 +21,156 @@ h2 {
     margin-top: 0;
     padding-top: .8em;
 }
+
+.main {
+    /* display: flex;
+    justify-content: center; */
+    padding: 20px;
+    max-width: 200vh;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 10px solid blue;
+}
+
+/* Estilos del formulario*/
+.contenedor {
+    width: 400px;
+    margin: 40px auto;
+}
+
+.formulario .contenedor-inputs {
+    padding: 20px;
+    background: #fff;
+    border-radius: 6px 6px 0 0;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="number"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 18px;
+}
+
+.formulario input[type="text"]:hover,
+.formulario input[type="email"]:hover,
+.formulario input[type="number"]:hover {
+    border-bottom: 2px solid #246eb9;
+}
+
+.formulario input[type=radio] {
+    display: none;
+}
+
+.formulario .read {
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.formulario .read .read-it {
+    border-radius: 3px 0 0 3px;
+}
+
+.formulario .read .not-read-it {
+    border-radius: 0 3px 3px 0;
+}
+
+.formulario .label-radio {
+    background: rgba(249, 160, 63, 0.4);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 49%;
+}
+
+.formulario input[type=radio]:checked + .label-radio{
+    background: #f9a03f;
+}
+
+.formulario .terminos {
+    text-align: center;
+    color: #424242;
+}
+
+.formulario .terminos label {
+    margin-left: 10px;
+}
+
+.formulario .error {
+    display: none;
+    margin-top: 20px;
+    border-radius: 3px;
+    background: #ce1818;
+    color: #fff;
+    padding: 15px 10px;
+    padding-left: 40px; 
+}
+
+.formulario .btn {
+    width: 100%;
+    text-align: center;
+    background: #246eb9;
+    color: #fff;
+    border: none;
+    display: block;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 0 0 6px 6px;
+}
+
+.formulario .btn:hover {
+    background: #4357ad;
+}
+h2 {
+    text-align: center;
+    margin: 0;
+    font-weight: 200;
+}
+  
+.book-data {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    list-style: none;
+}
+  
+.book-data li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    font-weight: 100;
+    display: flex;
+}
+  
+.book-data label {
+    flex: 1;
+    cursor: pointer;
+}
+  
+.book-data input {
+    display: none;
+}
+  
+.book-data input + label:before {
+    content: "⬜️";
+    margin-right: 10px;
+}
+  
+.book-data input:checked + label:before {
+    content: "🌮";
+}
+  
+.add-books {
+    margin-top: 20px;
+}
+  
+.add-books input {
+    padding: 10px;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
