@@ -5,6 +5,7 @@ const author = formulario.author;
 const pages = formulario.pages;
 const read = formulario.read;
 const error = document.querySelector('.error');
+const losLibros = document.querySelector('.book-data');
 let myLibrary = [];                                     // Array para guardar los libros
 
 
@@ -19,14 +20,20 @@ function Book(title, author, pages, read) {
 }
 
 function addBookToLibrary(e) {
-    e.preventDefault();
+    e.preventDefault();                                                 // Detiene el reload de la página
     // Toma los parametros del usuario
     const book = new Book(`${title.value}`, `${author.value}`, `${pages.value}`, `${read.value}`);
     console.log(book.info());
+    const libro = document.createElement('li');
+    libro.textContent = book.info();
+    losLibros.appendChild(libro);
 
     // Llama a la función Book (constuctor) y pasa los datos al array
     this.reset();                                                        // Limpia el formulario una vez que captura los datos
 }
+
+
+
 
 const theHobbit = new Book('The Hobbit', 'J. R. R. Tolkien', 295, 'not read yet');
 
